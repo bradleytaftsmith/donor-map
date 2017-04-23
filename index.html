@@ -15,6 +15,12 @@
             height: 100%;
             width: 100%;
         }
+        button {
+          position:absolute;
+          top:1%;
+          right:1%;
+        }
+
     </style>
     <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
@@ -22,7 +28,9 @@
 </head>
 <body>
     <div id="map"></div>
-
-    <script src= "./donor-map.js"></script>
+    <button onclick="toggleCluster();">Toggle Clustering</button>
+    <script src= "js/load-data.js"></script>
+     <script src= "js/toggle.js"></script>
+    <script src= "js/donor-map.js"></script>
 </body>
 </html>
