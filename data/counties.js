@@ -1,4 +1,4 @@
-{
+counties = {
 "type": "FeatureCollection",
                                                                                 
 "features": [
