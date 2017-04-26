@@ -9,6 +9,5 @@ L.tileLayer(
     maxZoom: 18,
     }).addTo(map);
 
-
-            
-// $.getJSON("./data/points.geojson", function(data) {addDataToMap(data, map);}); 
+L.geoJson(counties_joined, {style: styleProjects}).addTo(map);
+clustersLayer.addTo(map);
