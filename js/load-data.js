@@ -3,8 +3,11 @@
 //add points to pointsLayer, and bind pop-up to each feature we care about
 pointsLayer = L.geoJson(points, {
     onEachFeature: function(feature, layer) {
-        var popupText = "<strong>"+feature.properties.project_title+"</strong>"
-            + "<br><strong>Project Description: </strong>" + feature.properties.project_description
+        var popupText = 
+        	"<strong>"+feature.properties.project_title+"</strong>"
+        	+ "<br><strong>County: </strong>" + feature.properties.county
+        	+ "<strong>  |  Constituency: </strong>" + feature.properties.contituency
+            + "<br><br><strong>Project Description: </strong>" + feature.properties.project_description
             + "<br><strong>Project Objectives: </strong>" + feature.properties.project_objectives;
         layer.bindPopup(popupText);
     }
