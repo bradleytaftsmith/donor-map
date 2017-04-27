@@ -1,4 +1,4 @@
-toggle = false;
+toggle = true;
 function toggleCluster() {
   if(!toggle) {
     map.removeLayer(pointsLayer);
