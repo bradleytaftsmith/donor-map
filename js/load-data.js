@@ -1,4 +1,3 @@
-//add counties to countyLayer
 
 //add points to pointsLayer, and bind pop-up to each feature we care about
 pointsLayer = L.geoJson(points, {
@@ -16,6 +15,7 @@ pointsLayer = L.geoJson(points, {
 //add cluster layer and fill it with points
 clustersLayer = L.markerClusterGroup();
 clustersLayer.addLayer(pointsLayer);
+clustersLayer.addTo(map);
 
 //function to return color based on different project counts
 function getColor(d) {
@@ -40,3 +40,4 @@ function styleProjects(feature) {
         fillOpacity: 0.7
     };
 }
+L.geoJson(counties_joined, {style: styleProjects}).addTo(map);

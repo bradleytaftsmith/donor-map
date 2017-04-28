@@ -14,7 +14,7 @@ Some mapping features exampled are:
 -a toggle for marker clustering following [this stackexchange answer](https://gis.stackexchange.com/questions/152128/leaflet-markercluster-cluster-uncluster-toggle) as an example.
 
 
--GeoJSON shape data (Counties)
+-GeoJSON shape data (Counties) with cloropleth styling based on project counts
 
 
 it contains an HTML file that can be run on a web server (index.html).
@@ -24,10 +24,5 @@ to install, run `git clone https://github.com/bradleytaftsmith/donor-map .` from
 
 
 Feel free to reach out if you have any questions!
-
-
-24 April 2017
-
-
 Bradley Smith
 
