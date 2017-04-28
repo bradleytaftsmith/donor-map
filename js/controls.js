@@ -1,27 +1,4 @@
-// The commented code below was attempting to assign a pane to the cluster and points layers for hiding them with the toggle button.
-
-// function showCluster() {
-//   window.map.getPane('pointsPane').style.display = 'none';
-//   window.map.getPane('clusterPane').style.display = '';
-// }
-
-// function showPoints () {
-//   window.map.getPane('clusterPane').style.display = 'none';
-//   window.map.getPane('pointsPane').style.display = '';
-// }
-
-// toggle = false;
-// function toggleCluster() {
-//   if(!toggle) {
-//     showCluster();
-//   } else {
-//     showPoints();
-//   }
-//   toggle = !toggle;
-// };
-
 // Toggle variable and function, for swapping between cluster and point.
-
 toggle = true;
 function toggleCluster() {
   if(!toggle) {
