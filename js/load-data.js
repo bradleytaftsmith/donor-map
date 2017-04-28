@@ -17,16 +17,16 @@ clustersLayer = L.markerClusterGroup();
 clustersLayer.addLayer(pointsLayer);
 clustersLayer.addTo(map);
 
-//function to return color based on different project counts
+// function to return color based on different project counts. I got my colors from 
 function getColor(d) {
-    return d > 200 ? '#800026' :
-           d > 150  ? '#BD0026' :
-           d > 100 ? '#E31A1C' :
-           d > 50 ? '#FC4E2A' :
-           d > 25 ? '#FD8D3C' :
-           d > 10 ? '#FEB24C' :
-           d > 5 ? '#FED976' :
-                      '#FFEDA0';
+    return d > 200 ? '#005824' :
+           d > 150  ? '#238b45' :
+           d > 100 ? '#41ae76' :
+           d > 50 ? '#66c2a4' :
+           d > 25 ? '#99d8c9' :
+           d > 10 ? '#ccece6' :
+           d > 5 ? '#e5f5f9' :
+                      '#f7fcfd';
 }
 
 //function to style by projects

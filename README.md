@@ -5,7 +5,7 @@ This repository contains an example of a [Leaflet](leafletjs.com) map that shows
 
 Some mapping features exampled are:
 
--GeoJSON point data (projects) mapped with popup text boxes
+-GeoJSON point data (projects) with popup text boxes added
 
 
 -marker clustering using [Leaflet.markercluster plugin](https://github.com/Leaflet/Leaflet.markercluster)
@@ -16,6 +16,8 @@ Some mapping features exampled are:
 
 -GeoJSON shape data (Counties) with cloropleth styling based on project counts
 
+-a generated legend
+
 
 it contains an HTML file that can be run on a web server (index.html).
 
@@ -25,4 +27,11 @@ to install, run `git clone https://github.com/bradleytaftsmith/donor-map .` from
 
 Feel free to reach out if you have any questions!
 Bradley Smith
+
+
+# To-Dos
+1. put data-join in code. This table join was hastily done to generate some mappable data. 
+2. change styling of county data by drop-down variable, and show some other views of the data (project values, durations, etc.). I'd like to make an example of doing this without jquery.
+3. use [leaflet-search](https://github.com/stefanocudini/leaflet-search) to search the features in a geoJSON layer
+
 
